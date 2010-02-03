@@ -1,0 +1,6 @@
+category: Libs
+requires: libeina05
+external-source: eina
+sdesc: "Enlightenment data types library (development)"
+ldesc: "Eina is a multi-platform library that provides optimized data 
+types and useful tools for Enlightenment projects."

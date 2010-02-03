@@ -1,0 +1,17 @@
+DESCRIPTION="Enlightenment data types library"
+HOMEPAGE="http://www.enlightenment.org/"
+SRC_URI="http://download.enlightenment.org/snapshots/2009-12-02/${P}.tar.bz2"
+
+PATCH_URI="
+	063-module-arch.patch
+	063-nprocs.patch
+	063-tests-noinst.patch
+"
+
+PKG_NAMES="${PN} libeina05 libeina-devel"
+libeina05_CONTENTS="usr/bin/*-05-0.dll usr/lib/eina/ usr/share/doc/"
+libeina_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
+
+DISTCLEANFILES="*.pc"
+
+CYGCONF_ARGS="--includedir=/usr/include/enlightenment --enable-tests"

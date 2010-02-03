@@ -1,0 +1,6 @@
+category: Libs
+requires: libgcc1
+external-source: eina
+sdesc: "Enlightenment data types library (runtime)"
+ldesc: "Eina is a multi-platform library that provides optimized data 
+types and useful tools for Enlightenment projects."
