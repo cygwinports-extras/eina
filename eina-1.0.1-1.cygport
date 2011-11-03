@@ -1,0 +1,14 @@
+DESCRIPTION="Enlightenment data types library"
+HOMEPAGE="http://www.enlightenment.org/"
+SRC_URI="http://download.enlightenment.org/releases/${P}.tar.bz2"
+
+PATCH_URI="
+	1.0.1-nprocs.patch
+	1.0.1-tests-noinst.patch
+"
+
+PKG_NAMES="libeina1 libeina-devel"
+libeina1_CONTENTS="usr/bin/cygeina-1.dll usr/share/doc/"
+libeina_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
+
+DISTCLEANFILES="*.pc src/include/eina_config.h"
