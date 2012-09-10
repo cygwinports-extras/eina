@@ -1,0 +1,13 @@
+--- origsrc/eina-1.7.0/configure.ac	2012-08-28 10:12:25.000000000 -0500
++++ src/eina-1.7.0/configure.ac	2012-09-10 01:44:56.961024600 -0500
+@@ -83,6 +83,10 @@ case "$host_os" in
+       MODULE_ARCH="$host_os-$host_cpu-v_maj.v_min.v_mic"
+       MODULE_EXT=".dll"
+       ;;
++   cygwin*)
++      MODULE_ARCH="$host_os-$host_cpu-v_maj.v_min.v_mic"
++      MODULE_EXT=".dll"
++      ;;
+    *)
+       MODULE_ARCH="$host_os-$host_cpu-v_maj.v_min.v_mic"
+       MODULE_EXT=".so"
