@@ -1,4 +1,10 @@
-DESCRIPTION="Enlightenment data types library"
+NAME="eina"
+VERSION=1.7.0
+RELEASE=1
+CATEGORY="X11"
+SUMMARY="Enlightenment data types library"
+DESCRIPTION="Eina is a multi-platform library that provides optimized data
+types and useful tools for Enlightenment projects."
 HOMEPAGE="http://www.enlightenment.org/"
 SRC_URI="http://download.enlightenment.org/releases/${P}.tar.bz2"
 
@@ -12,3 +18,5 @@ libeina1_CONTENTS="usr/bin/cygeina-1.dll usr/share/doc/"
 libeina_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
 
 DISTCLEANFILES="*.pc src/include/eina_config.h"
+
+KEEP_LA_FILES="none"
