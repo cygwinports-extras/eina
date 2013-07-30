@@ -1,12 +1,12 @@
 NAME="eina"
-VERSION=1.7.4
+VERSION=1.7.7
 RELEASE=1
-CATEGORY="X11"
+CATEGORY="Libs"
 SUMMARY="Enlightenment data types library"
 DESCRIPTION="Eina is a multi-platform library that provides optimized data
 types and useful tools for Enlightenment projects."
 HOMEPAGE="http://www.enlightenment.org/"
-SRC_URI="http://download.enlightenment.org/releases/${P}.tar.bz2"
+SRC_URI="http://download.enlightenment.org/releases/eina-${VERSION}.tar.bz2"
 
 PATCH_URI="
 	1.0.1-nprocs.patch
